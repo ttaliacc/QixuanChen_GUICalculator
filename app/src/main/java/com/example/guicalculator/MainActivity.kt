@@ -63,94 +63,105 @@ class MainActivity : AppCompatActivity() {
         button9 = findViewById(R.id.button9)
 
         button1.setOnClickListener {
-            currentInput = button1.text.toString()
+            var temp = button1.text.toString()
             if (resultView.text == "0" || newValue) {
-                resultView.text = currentInput
+                resultView.text = temp
                 newValue = false
             } else {
-                resultView.text = "${resultView.text}$currentInput"
+                resultView.text = "${resultView.text}$temp"
             }
+            currentInput = resultView.text.toString()
         }
         button2.setOnClickListener {
-            currentInput = button2.text.toString()
+            var temp = button2.text.toString()
             if (resultView.text == "0" || newValue) {
-                resultView.text = currentInput
+                resultView.text = temp
+                currentInput = resultView.text.toString()
                 newValue = false
             } else {
-                resultView.text = "${resultView.text}$currentInput"
+                resultView.text = "${resultView.text}$temp"
             }
+            currentInput = resultView.text.toString()
         }
         button3.setOnClickListener {
-            currentInput = button3.text.toString()
+            var temp = button3.text.toString()
             if (resultView.text == "0" || newValue) {
-                resultView.text = currentInput
+                resultView.text = temp
                 newValue = false
             } else {
-                resultView.text = "${resultView.text}$currentInput"
+                resultView.text = "${resultView.text}$temp"
             }
+            currentInput = resultView.text.toString()
         }
         button4.setOnClickListener {
-            currentInput = button4.text.toString()
+            var temp = button4.text.toString()
             if (resultView.text == "0" || newValue) {
-                resultView.text = currentInput
+                resultView.text = temp
                 newValue = false
             } else {
-                resultView.text = "${resultView.text}$currentInput"
+                resultView.text = "${resultView.text}$temp"
             }
+            currentInput = resultView.text.toString()
         }
         button5.setOnClickListener {
-            currentInput = button5.text.toString()
+            var temp = button5.text.toString()
             if (resultView.text == "0" || newValue) {
-                resultView.text = currentInput
+                resultView.text = temp
                 newValue = false
             } else {
-                resultView.text = "${resultView.text}$currentInput"
+                resultView.text = "${resultView.text}$temp"
             }
+            currentInput = resultView.text.toString()
         }
         button6.setOnClickListener {
-            currentInput = button6.text.toString()
+            var temp = button6.text.toString()
             if (resultView.text == "0" || newValue) {
-                resultView.text = currentInput
+                resultView.text = temp
                 newValue = false
             } else {
-                resultView.text = "${resultView.text}$currentInput"
+                resultView.text = "${resultView.text}$temp"
             }
+            currentInput = resultView.text.toString()
         }
         button7.setOnClickListener {
-            currentInput = button7.text.toString()
+            var temp = button7.text.toString()
             if (resultView.text == "0" || newValue) {
-                resultView.text = currentInput
+                resultView.text = temp
                 newValue = false
             } else {
-                resultView.text = "${resultView.text}$currentInput"
+                resultView.text = "${resultView.text}$temp"
             }
+            currentInput = resultView.text.toString()
         }
         button8.setOnClickListener {
-            currentInput = button8.text.toString()
+            var temp = button8.text.toString()
             if (resultView.text == "0" || newValue) {
-                resultView.text = currentInput
+                resultView.text = temp
                 newValue = false
             } else {
-                resultView.text = "${resultView.text}$currentInput"
+                resultView.text = "${resultView.text}$temp"
             }
+            currentInput = resultView.text.toString()
         }
         button9.setOnClickListener {
-            currentInput = button9.text.toString()
+            var temp = button9.text.toString()
             if (resultView.text == "0" || newValue) {
-                resultView.text = currentInput
+                resultView.text = temp
                 newValue = false
             } else {
-                resultView.text = "${resultView.text}$currentInput"
+                resultView.text = "${resultView.text}$temp"
             }
+            currentInput = resultView.text.toString()
         }
         button0.setOnClickListener {
-            currentInput = "0"
+            var temp = button8.text.toString()
             if (resultView.text == "0" || newValue) {
-                resultView.text = currentInput
+                resultView.text = temp
                 newValue = false
             } else {
-                resultView.text = "${resultView.text}$currentInput"
+                resultView.text = "${resultView.text}$temp"
             }
+            currentInput = resultView.text.toString()
         }
         buttonDot.setOnClickListener {
             currentInput = buttonDot.text.toString()
@@ -181,7 +192,7 @@ class MainActivity : AppCompatActivity() {
 
         buttonDivide.setOnClickListener {
             if (currentOperator != null) {
-                var currentInputValue = currentInput.toFloat()
+                var currentInputValue =  currentInput.toFloat()
                 var storedInputValue = storedInput.toFloat()
                 when (currentOperator) {
                     "+" -> result = storedInputValue + currentInputValue
